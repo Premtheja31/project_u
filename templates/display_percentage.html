@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display percentage</title>
+</head>
+<body>
+    <center>
+        <table border="2px solid black">
+        <colgroup>
+        <col span="0" style="background-color: #D6EEEE">
+        </colgroup>
+            <thead>
+              <tr>
+                <th border="2px solid black">name</th>
+                <th border="2px solid black">gender</th>
+                <th border="2px solid black">dob</th>
+                <th border="2px solid black">maths</th>
+                <th border="2px solid black">physics</th>
+                <th border="2px solid black">chemistry</th>
+                <th border="2px solid black">english</th>
+                <th border="2px solid black">biology</th>
+                <th border="2px solid black">economics</th>
+                <th border="2px solid black">history</th>
+                <th border="2px solid black">civics</th>
+              </tr>
+            </thead>
+        {% for i in data %}
+            <tbody>
+              <tr>
+                <td border="2px solid black">{{i.name}}</td>
+                <td border="2px solid black">{{i.gender}}</td>
+                <td border="2px solid black">{{i.dob}}</td>
+                <td border="2px solid black">{{i.maths}}</td>
+                <td border="2px solid black">{{i.physics}}</td>
+                <td border="2px solid black">{{i.chemistry}}</td>
+                <td border="2px solid black">{{i.english}}</td>
+                <td border="2px solid black">{{i.biology}}</td>
+                <td border="2px solid black">{{i.economics}}</td>
+                <td border="2px solid black">{{i.history}}</td>
+                <td border="2px solid black">{{i.civics}}</td>
+
+              </tr>
+              </tbody>
+        {% endfor %}
+          </table>
+
+    </center>
+</body>
+</html>

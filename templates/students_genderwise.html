@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>students genderwise</title>
+</head>
+<body>
+    <center>
+        <form method="POST">
+            {% csrf_token %}
+            <select name="gender" id="gender">
+                <option value="m">m</option>
+                <option value="f">f</option>
+            </select>
+            <button type="submit">details</button>
+        </form>
+    </center>
+</body>
+</html>

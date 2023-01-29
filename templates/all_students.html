@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all_students</title>
+</head>
+<body>
+    <center>
+        <h1 class="text-primary">all_students details</h1>
+        <table border="2px solid black">
+        <colgroup>
+        <col span="0" style="background-color: #D6EEEE">
+        </colgroup>
+            <thead>
+              <tr>
+                <th border="2px solid black">name</th>
+                <th border="2px solid black">gender</th>
+                <th border="2px solid black">dob</th>
+                <th border="2px solid black">avg marks</th>
+              </tr>
+            </thead>
+        {% for i in data %}
+            <tbody>
+              <tr>
+                <td border="2px solid black">{{i.name}}</td>
+                <td border="2px solid black">{{i.gender}}</td>
+                <td border="2px solid black">{{i.dob}}</td>
+                <td border="2px solid black">{{i.maths}}</td>
+
+              </tr>
+              </tbody>
+        {% endfor %}
+          </table>
+
+    </center>
+</body>
+</html>

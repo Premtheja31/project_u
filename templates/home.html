@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <center>
+        <h1>Display</h1>
+    </center>
+    <center>
+        <a href="{% url 'all_students' %}">all students</a>
+        <br>
+        <a href="{% url 'students_marks_above' %}">students marks above</a>
+        <br>
+        <a href="{% url 'students_genderwise' %}">students gender wise</a>
+        <br>
+        <a href="{% url 'specific_name' %}">specific student</a>
+        <br>
+        <a href="{% url 'all_cutoff' %}">student marks above all subjects</a>
+        <br>
+    </center>
+</body>
+</html>
